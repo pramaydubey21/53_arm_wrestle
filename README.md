@@ -88,3 +88,21 @@ Submission is only the following three things:
 - [] A 10-second video of gameplay **before** your changes, showing the bug/broken behavior
 - [] A 10-second video of gameplay **after** your changes, showing the bug fixed and the new features working
 - [] The Chat/LLM used page link, with the complete chat history
+
+---
+
+## Submission
+
+| Item | Link |
+|------|------|
+| Gameplay **before** changes (bug: presses push toward the computer) | [videos/before.mov](videos/before.mov) |
+| Gameplay **after** changes (fix + AI surge, warnings, counter-surge) | [videos/after.mov](videos/after.mov) |
+| LLM chat history | _add your chat share link here_ |
+
+### Changes made
+
+- **Task 1:** Left/Right presses now pull the hands toward -100, so the player can win.
+- **Task 2:** The AI cycles Steady → Power Surge (2.2× force, 1.5 s) → Cooldown (0.4× force, 2 s).
+- **Task 3:** Flashing surge banner, red table border, AI phase meter, and an EXHAUSTED state that locks input until stamina recovers to 35.
+- **Task 4:** Pushing within 0.6 s of a surge ending triggers a counter-surge: 2 s of double push, 3× stamina regen, +25 stamina.
+- Push force, stamina cost/regen and AI strength were rebalanced so stamina and surges actually matter.
